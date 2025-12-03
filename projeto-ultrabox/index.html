@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRABOX</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Caixa - Supermercado</h1>
+        <form id="formCaixa" class="form-box">
+            <h2>Informe os 3 produtos</h2>
+
+            <!-- Produto 1 -->
+            <div class="produto">
+                <h3>Produto 1</h3>
+                <input type="text" placeholder="Nome do Produto" class="nome" required>
+                <select class="categoria" required>
+                                       <option value="Limpeza">Limpeza</option>
+                    <option value="Higiene">Higiene</option>
+                </select>
+                <input type="number" placeholder="Preço Unitário (R$)" class="preco" step="0.01" required>
+                <input type="number" placeholder="Quantidade" class="quantidade" required>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto">
+                <h3>Produto 2</h3>
+                <input type="text" placeholder="Nome do Produto" class="nome" required>
+                <select class="categoria" required>
+                    <option value="">Categoria</option>
+                    <option value="Alimento">Alimento</option>
+                    <option value="Limpeza">Limpeza</option>
+                    <option value="Higiene">Higiene</option>
+                </select>
+                <input type="number" placeholder="Preço Unitário (R$)" class="preco" step="0.01" required>
+                <input type="number" placeholder="Quantidade" class="quantidade" required>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto">
+                <h3>Produto 3</h3>
+                <input type="text" placeholder="Nome do Produto" class="nome" required>
+                <select class="categoria" required>
+                    <option value="">Categoria</option>
+                    <option value="Alimento">Alimento</option>
+                    <option value="Limpeza">Limpeza</option>
+                    <option value="Higiene">Higiene</option>
+                </select>
+                <input type="number" placeholder="Preço Unitário (R$)" class="preco" step="0.01" required>
+                <input type="number" placeholder="Quantidade" class="quantidade" required>
+            </div>
+
+            <button type="submit">Calcular Total</button>
+        </form>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+<script src="./JS/script.js"></script>
+</body>
+</html>
