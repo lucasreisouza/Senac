@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+.cabecalho{
+    width: 100%;
+    height: auto;
+    background-color: #049DD9;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main{
+    padding: 20px 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.frases{
+    width: 500px;
+    height: auto;
+    background-color: #012340;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.frases .card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 94%;
+    background-color: #049DD9;
+    border-radius: 10px;
+}
+
+.card p{
+    font-family: sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.frases button{
+    background-color: #049DD9;
+    width: 247px;
+    height: 36px;
+    border: solid #05DBF2 2px;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.frases button:hover{
+    background-color: #012340;
+    color: #05DBF2;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.nome{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
