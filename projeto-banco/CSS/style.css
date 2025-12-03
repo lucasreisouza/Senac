@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#logo {
+    border-radius: 10px;
+    width: 60px;
+    height: auto;
+}
+.container-menu {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #F2E205;
+    align-items: center;
+    gap: 70px;
+    justify-content: space-between;
+    color: #3238A6;
+}
+
+.container-menu .nav{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#status{
+    margin: 50px 0 0 0;
+    background-color: #F2E205;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 5px;
+    color: #3238A6;
+    width: 30%;
+    height: auto;
+}
+
+#status p{
+    font-size: 24px;
+}
+
+body{
+    background-color: #3238A6;
+}
