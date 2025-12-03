@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descontos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Descontos</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="form">
+                <h1>Calculadora de Descontos</h1>
+                <label for="preco">Valor do produto (R$):</label>
+                <input type="number" id="preco" placeholder="250.00">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="">Selecione</option>
+                    <option value="avista">À vista (Dinheiro ou Pix)</option>
+                    <option value="credito">Cartão de crédito</option>
+                    <option value="2x">Parcelado em 2x</option>
+                    <option value="3x">Parcelado em 3x</option>
+                </select>
+                <button id="btn">Calcular</button>
+                <div id="resultado"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
