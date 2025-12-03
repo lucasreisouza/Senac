@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Desconto</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Desconto</h1>
+        <form id="formDesconto" class="form-box">
+            <label for="produto">Nome do Produto:</label>
+            <input type="text" id="produto" required>
+
+            <label for="preco">Preço do Produto (R$):</label>
+            <input type="number" id="preco" step="0.01" required>
+
+            <label for="tipoCliente">Tipo de Cliente:</label>
+            <select id="tipoCliente" required>
+                <option value="Comum">Comum</option>
+                <option value="Estudante">Estudante</option>
+                <option value="Assinante">Assinante</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
