@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header, footer {
+      background-color: rgba(55, 62, 106, 0.5);
+    color: #C9E7F2;
+    padding: 15px 0 15px 0;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+  background-color: hsla(200, 100%, 50%, 0.3); /* Azul com 30% de transparência */
+}
+
+button:hover {
+    background-color: #203359;
+    color: #C9E7F2;
+    cursor: pointer;
+}
+
+.erro {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#lista-ranking {
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#lista-ranking li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.lider {
+    background-color: rgba(75, 180, 191, 0.8);
+    font-weight: bold;
+    border: 2px solid #1E2940;
+    border-radius: 10px 10px 0 0;
+}
+
+li{
+  background-color: rgba(113, 111, 166, 0.5);
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

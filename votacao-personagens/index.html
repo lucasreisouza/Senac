@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votação de Personagens</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Votação de Personagens</h1>
+    </header>
+
+    <main>
+        <section class="form-votacao">
+            <select id="personagem">
+                <option value="">Selecione um personagem</option>
+                <option value="Relâmpago McQueen">Relâmpago McQueen</option>
+                <option value="Storm">Storm</option>
+                <option value="Francesco">Francesco</option>
+                <option value="Cruz">Cruz</option>
+            </select>
+
+            <button id="btn-votar">Votar</button>
+            <div class="erro"></div>
+        </section>
+
+        <section id="ranking">
+            <h2>Ranking</h2>
+            <ul id="lista-ranking"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lucas Reis Souza - 26/11/2025</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
