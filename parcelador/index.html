@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcelador</title>
+    <link rel="stylesheet" href=".//CSS/style.css">
+</head>
+<body>
+    <section>
+        <div>
+            <form id="form-parcelas">
+                <label>Valor Total da compra</label>
+                <input type="text" id="valor" placeholder="Digite o valor da sua compra">
+                <label>Quantidade de Parcelas</label>
+                <input id="qtd" type="number" min="1" max="12" required>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+        <h2>Resultado</h2>
+        <div id="resultado"></div>
+    </section>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo */
+body {
+    background: #f1f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Seção central */
+section {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 380px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Título */
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #1a73e8;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 4px #1a73e860;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #155fc4;
+}
+
+/* Área do resultado */
+#resultado p {
+    background: #e8f0fe;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1a73e8;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
