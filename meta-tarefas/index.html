@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Metas e Tarefas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Metas e Tarefas</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="tarefa">
+            <h2>Adicionar Meta ou Tarefa</h2>
+            <div class="formulario">
+            <form id="formulario" class="form">
+                <label>Nome:</label>
+                <input id="titulo" type="text" placeholder="Digite o nome da Meta">
+                <label>Descrição:</label>
+                <textarea id="descricao" placeholder="Descrição"></textarea>
+                <label>Prioridade:</label>
+                <select id="prioridade">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <input id="data" type="date">
+                <button id="btn-adicionar">Adicionar Meta</button>
+            </form>
+            </div>
+            <div id="erro"></div>
+        </div>
+        </section>
+        <section id="lista">
+            <div class="list">
+            <h2>Metas/Tarefas</h2>
+            <ul id="lista-metas"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Lucas Reis - 19/11/25</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
