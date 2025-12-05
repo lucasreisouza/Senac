@@ -6,8 +6,11 @@ O projeto de biblioteca serve para a pessoa listar os livros que gosta com o aut
 
 ![Imagem](./imagens/biblioteca.png)
 
-Funcionalidades
-Liste as funcionalidades do projeto.
+## Funcionalidades
+
+- Permite colocar o título do livro e o autor;
+- Tem como escolher o ano de publicação do livro;
+- E quando aperta em adicionar, gera um cartão com todos os detalhes que foram fornecidos no formulário.
 
 Tecnologias utilizadas
 HTML
