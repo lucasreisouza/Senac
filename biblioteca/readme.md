@@ -2,7 +2,9 @@
 
 O projeto de biblioteca serve para a pessoa listar os livros que gosta com o autor, título do livro e o ano que foi publicado, classificando em clássico se a data de publicação for antes de 2000, e em moderno se a data de publicação for do ano 2000 pra frente. 
 
-Adicione prints do seu projeto, como: Prévia do projeto, ou Etapas do projeto, ou Telas de como a aplicação funciona.
+## Prévia do projeto
+
+![Imagem](./imagens/biblioteca.png)
 
 Funcionalidades
 Liste as funcionalidades do projeto.
