@@ -1,0 +1,247 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:        #0f0f13;
+  --surface:   #1a1a24;
+  --border:    #2e2e40;
+  --text:      #e8e8f0;
+  --muted:     #7a7a99;
+
+  --verde:     #22c55e;
+  --verde-bg:  #052e16;
+  --laranja:   #f97316;
+  --laranja-bg:#431407;
+  --vermelho:  #ef4444;
+  --vermelho-bg:#450a0a;
+
+  --accent:    #6366f1;
+  --accent2:   #8b5cf6;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 16px;
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ===== FORM ===== */
+#formCadastro {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== TÍTULO ===== */
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ===== CAMPOS ===== */
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+/* ===== BOTÕES ===== */
+.botoes {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: opacity 0.2s, transform 0.1s;
+  flex: 1;
+}
+
+#btnAdicionar {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff;
+}
+
+#btnLimpar {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* ===== ÁREA DE RESULTADO (mensagem) ===== */
+#areaResultado {
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  min-height: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+#areaResultado.visivel {
+  padding: 12px 16px;
+}
+
+#areaResultado.erro {
+  background: var(--vermelho-bg);
+  color: var(--vermelho);
+  border: 1px solid var(--vermelho);
+}
+
+#areaResultado.menor {
+  background: var(--laranja-bg);
+  color: var(--laranja);
+  border: 1px solid var(--laranja);
+}
+
+#areaResultado.maior {
+  background: var(--verde-bg);
+  color: var(--verde);
+  border: 1px solid var(--verde);
+}
+
+/* ===== LISTA ===== */
+#areaLista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#tituloLista {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+#tituloLista.oculto {
+  display: none;
+}
+
+#listaUsuarios {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== ITEM DA LISTA ===== */
+.item-usuario {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  animation: slideIn 0.3s ease;
+}
+
+.item-usuario.item-maior {
+  border-left: 3px solid var(--verde);
+}
+
+.item-usuario.item-menor {
+  border-left: 3px solid var(--laranja);
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item-nome {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.item-idade {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.item-idade {
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.idade-maior {
+  background: var(--verde-bg);
+  color: var(--verde);
+}
+
+.idade-menor {
+  background: var(--laranja-bg);
+  color: var(--laranja);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+  #formCadastro { padding: 28px 20px; }
+  .titulo { font-size: 1.45rem; }
+  .botoes { flex-direction: column; }
+}
+}
